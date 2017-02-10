@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cup</string>
+    <string name="transition_french_image">transition:french_image</string>
+    <string name="transition_french_title">transition:french_title</string>
+</resources>
