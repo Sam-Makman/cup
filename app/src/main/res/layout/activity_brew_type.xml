@@ -6,12 +6,16 @@
     android:id="@+id/activity_brew_type"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp"
     app:columnCount="2"
     app:rowCount="3"
     tools:context="com.makman.cup.activities.BrewTypeActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1">
@@ -27,11 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            style="@style/text"
+            style="@style/labelText"
             android:text="french press"/>
     </RelativeLayout>
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1">
@@ -47,11 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            style="@style/text"
+            style="@style/labelText"
             android:text="chemex"/>
     </RelativeLayout>
     <RelativeLayout
-    android:layout_width="wrap_content"
+    android:layout_width="60dp"
     android:layout_height="wrap_content"
     app:layout_columnWeight="1"
     app:layout_rowWeight="1">
@@ -67,10 +71,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        style="@style/text"
+        style="@style/labelText"
         android:text="aeropress"/>
-</RelativeLayout>    <RelativeLayout
-    android:layout_width="wrap_content"
+</RelativeLayout>
+    <RelativeLayout
+    android:layout_width="60dp"
     android:layout_height="wrap_content"
     app:layout_columnWeight="1"
     app:layout_rowWeight="1">
@@ -86,10 +91,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        style="@style/text"
+        style="@style/labelText"
         android:text="pour over"/>
-</RelativeLayout>    <RelativeLayout
-    android:layout_width="wrap_content"
+</RelativeLayout>
+    <RelativeLayout
+    android:layout_width="60dp"
     android:layout_height="wrap_content"
     app:layout_columnWeight="1"
     app:layout_rowWeight="1">
@@ -105,11 +111,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        style="@style/text"
+        style="@style/labelText"
         android:text="cold brew"/>
 </RelativeLayout>
     <RelativeLayout
-    android:layout_width="wrap_content"
+    android:layout_width="60dp"
     android:layout_height="wrap_content"
     app:layout_columnWeight="1"
     app:layout_rowWeight="1">
@@ -125,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        style="@style/text"
+        style="@style/labelText"
         android:text="espresso"/>
 </RelativeLayout>
 </android.support.v7.widget.GridLayout>

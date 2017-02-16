@@ -9,11 +9,11 @@
         android:id="@+id/view_task_textview_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         tools:text="Boil Water"
         style="@style/TitleText"/>
     <RelativeLayout
-        android:layout_width="40dp"
+        android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/view_task_textview_title"
         android:layout_alignTop="@id/view_task_textview_title">
@@ -23,6 +23,12 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_stage_incomplete"
             android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_line"
+            android:layout_centerHorizontal="true"
             />
     </RelativeLayout>
 
@@ -52,5 +58,6 @@
         android:visibility="gone"
         android:layout_alignStart="@id/view_task_textview_title"
         android:layout_below="@id/view_task_textview_description"
-        android:textSize="30sp"/>
+        style="@style/text"
+        android:textSize="60sp"/>
 </RelativeLayout>

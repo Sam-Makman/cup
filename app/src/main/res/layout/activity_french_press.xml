@@ -7,12 +7,13 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="40dp"
+    style="@style/outerlayout"
     tools:context="com.makman.cup.activities.BrewActivity">
     <Button
         android:id="@+id/activity_french_press_image"
-        android:layout_width="40dp"
-        android:layout_height="80dp"
+        android:layout_width="41dp"
+        android:layout_height="69dp"
         android:layout_centerHorizontal="true"
         android:transitionName="@string/transition_french_image"
         android:background="@drawable/ic_french_press"/>
@@ -27,27 +28,15 @@
         style="@style/text"
         android:textSize="50sp"
         android:text="french\npress"/>
-    <TextView
-        android:id="@+id/activity_french_press_textview_takes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/activity_french_press_textview_title"
-        style="@style/text"
-        android:text="TAKES"/>
-    <TextView
-        android:id="@+id/activity_french_press_textview_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/activity_french_press_textview_takes"
-        style="@style/text"
-        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:id="@+id/activity_french_press_textview_taste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_french_press_textview_time"
+        android:layout_below="@id/activity_french_press_textview_title"
         android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:layout_marginTop="25dp"
         style="@style/text"
         android:text="TASTE"/>
     <TextView
@@ -55,17 +44,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textSize="18sp"
         android:layout_below="@id/activity_french_press_textview_taste"
         android:text="strong, dark, heavy"
         style="@style/text"
-        >
-    </TextView>
+        />
+    <TextView
+        android:id="@+id/activity_french_press_textview_takes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/activity_french_press_textview_taste_profile"
+        style="@style/text"
+        android:text="TAKES"/>
+    <TextView
+        android:id="@+id/activity_french_press_textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_below="@id/activity_french_press_textview_takes"
+        style="@style/text"
+        android:layout_centerHorizontal="true"/>
     <TextView
         android:id="@+id/activity_french_press_textview_enough_for"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_french_press_textview_taste_profile"
+        android:layout_below="@id/activity_french_press_textview_time"
         android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        android:layout_marginTop="25dp"
         android:text="ENOUGH FOR"
         style="@style/text"/>
     <Button
@@ -88,6 +96,7 @@
         <Button
             android:id="@+id/activity_french_press_button_one"
             android:layout_width="40dp"
+            android:textSize="18sp"
             android:layout_height="wrap_content"
             android:background="@drawable/selected_button"
             android:text="1"/>
@@ -96,18 +105,21 @@
             android:id="@+id/activity_french_press_button_two"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
+            android:textSize="18sp"
             android:background="@drawable/unselected_button"
             android:text="2"/>
         <Button
             android:id="@+id/activity_french_press_button_three"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
+            android:textSize="18sp"
             android:background="@drawable/unselected_button"
             android:text="3"/>
         <Button
             android:id="@+id/activity_french_press_button_four"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
+            android:textSize="18sp"
             android:background="@drawable/unselected_button"
             android:text="4"/>
     </LinearLayout>

@@ -1,9 +1,12 @@
 package com.makman.cup.views;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
 import com.makman.cup.R;
@@ -43,6 +46,7 @@ public class CompletionView extends LinearLayout implements TaskView.TaskViewLis
     }
 
     private void init(Context context){
+
         mLayout = (LinearLayout) findViewById(R.id.view_completion_layout);
         mContext = context;
         active = 0;

@@ -1,5 +1,6 @@
 package com.makman.cup.activities;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -29,6 +30,12 @@ public class InstructionActivity extends AppCompatActivity {
         mTitle = (TextView) findViewById(R.id.activity_instruction_textview_title);
         int brewType = getIntent().getIntExtra(ARG_BREW_TYPE, -1);
         Task[] tasks;
+
+        String fontPath = "fonts/AbrilFatface-Regular.ttf";
+        Typeface typeface = Typeface.createFromAsset(getAssets(), fontPath);
+
+        mTitle.setTypeface(typeface);
+
         switch (brewType){
             case FRENCH_PRESS:
                 tasks = FrenchPressTasks.getTasks();

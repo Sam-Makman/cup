@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.makman.cup.activities.SplashActivity">
     <RelativeLayout
-        android:layout_width="100dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         >
@@ -22,8 +22,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_splash_image_view"
             android:layout_centerHorizontal="true"
+            android:textAlignment="center"
             android:textSize="40sp"
             style="@style/text"
-            android:text="Cup" />
+            android:text="good coffee" />
     </RelativeLayout>
 </RelativeLayout>
